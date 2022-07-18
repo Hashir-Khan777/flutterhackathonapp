@@ -15,8 +15,8 @@ class PaymentScreen extends StatelessWidget {
             children: [
               Container(
                 margin: const EdgeInsets.only(bottom: 10),
-                width: MediaQuery.of(context).size.width * 0.2,
-                height: MediaQuery.of(context).size.height * 0.12,
+                width: MediaQuery.of(context).size.width * 0.27,
+                height: MediaQuery.of(context).size.width * 0.27,
                 decoration: const BoxDecoration(
                   color: Colors.green,
                   borderRadius: BorderRadius.all(
@@ -25,7 +25,7 @@ class PaymentScreen extends StatelessWidget {
                 ),
                 child: const Icon(
                   Icons.check,
-                  size: 25,
+                  size: 65,
                 ),
               ),
               const Text(

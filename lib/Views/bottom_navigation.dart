@@ -13,7 +13,12 @@ class BottomNavigation extends StatefulWidget {
 
 class _BottomNavigationState extends State<BottomNavigation> {
   int currentTab = 0;
-  var screens = [HomeScreen(), CartScreen(), SettingsScreen(), AddScreen()];
+  var screens = [
+    const HomeScreen(),
+    const CartScreen(),
+    const SettingsScreen(),
+    const AddScreen()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +34,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
                 currentTab = 0;
               });
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.home_outlined,
               size: 25,
+              color: currentTab == 0 ? Colors.pink : Colors.grey,
             ),
           ),
           IconButton(
@@ -40,9 +46,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
                 currentTab = 1;
               });
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.shopping_bag_outlined,
               size: 25,
+              color: currentTab == 1 ? Colors.pink : Colors.grey,
             ),
           ),
           IconButton(
@@ -51,9 +58,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
                 currentTab = 2;
               });
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.settings_outlined,
               size: 25,
+              color: currentTab == 2 ? Colors.pink : Colors.grey,
             ),
           ),
           IconButton(
@@ -62,9 +70,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
                 currentTab = 3;
               });
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.add,
               size: 25,
+              color: currentTab == 3 ? Colors.pink : Colors.grey,
             ),
           ),
         ],
